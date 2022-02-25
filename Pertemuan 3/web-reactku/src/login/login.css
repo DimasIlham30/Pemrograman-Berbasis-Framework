@@ -26,6 +26,16 @@ label{
 	border-radius: 3px;
 	padding: 10px 20px;
 }
+
+.tombol_cancel{
+	background: #f55549;
+	color: white;
+	font-size: 11pt;
+	width: 50%;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 20px;
+}
  
 .link{
 	color: #232323;

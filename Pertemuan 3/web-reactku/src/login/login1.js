@@ -4,8 +4,8 @@ import './login.css';
 const Login = () =>{
     return (
         <div class="kotak_login">
-            <center><h1>Form Login</h1></center>
-            <p class="tulisan_login">Silahkan login</p>
+            <center><h2>Form Login</h2></center>
+            <center> <h1 class="tulisan_login">Tugas Pertemuan Ketiga</h1></center>
 
             <form>
                 <label>Username</label>
@@ -16,10 +16,10 @@ const Login = () =>{
 
                 <input type="submit" class="tombol_login" value="LOGIN"/>
 
-                <p><input type='checkbox' name='remember_me' value='Remember Me' />Remember Me</p>
+               <center> <p><input type='checkbox' name='remember_me' value='Remember Me' />Remember Me</p></center>
 
                 
-                <input type="submit" class="tombol_cancel" value="Cancel"/>
+                <center><input type="submit" class="tombol_cancel" value="Cancel"/></center>
 
                 <br/>
                 <br/>
