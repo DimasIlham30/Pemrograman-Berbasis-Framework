@@ -1,20 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-//import App from './App';
+import App from './App';
 import Test from './Test';
 import reportWebVitals from './reportWebVitals';
-import HelloComponent from './component/HelloComponent'; 
+import HelloComponent from './component/HelloComponent';
 import Login from './login/login1';
 
 class StateFullComponent extends React.Component {
-  render() {
-    return <p>StateFullComponent</p>
-  }
+    render() {
+        return <p > StateFullComponent </p>
+    }
 }
 
-ReactDOM.render(
-  <Login />,
+ReactDOM.render( 
+  <Login /> ,
   document.getElementById('root')
 );
 

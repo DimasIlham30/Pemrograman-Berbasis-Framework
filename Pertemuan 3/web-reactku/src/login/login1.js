@@ -8,11 +8,15 @@ const Login = () =>{
             <center> <h1 class="tulisan_login">Tugas Pertemuan Ketiga</h1></center>
 
             <form>
-                <label>Username</label>
-                <input type="text" name="username" class="form_login" placeholder="Username atau email .."/>
+                <div class="form-inline">
+                    <label>Username</label>
+                    <input type="text" name="username" class="form_login" placeholder="masukkan username"/>
+                </div>
 
-                <label>Password</label>
-                <input type="text" name="password" class="form_login" placeholder="Password .."/>
+                <div class="form-inline">
+                    <label>Password</label>
+                    <input type="password" name="password" class="form_login" placeholder="masukkan password anda"/>
+                </div>
 
                 <input type="submit" class="tombol_login" value="LOGIN"/>
 
