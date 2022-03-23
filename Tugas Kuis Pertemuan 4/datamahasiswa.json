@@ -1,0 +1,31 @@
+{
+  "mahasiswa": [
+    {
+      "id": 1,
+      "nim": "1941720206",
+      "alamat": "Jl. Simpang Candi Panggung No 58 Kota Malang - Jawa Timur",
+      "hp": "0823914897241",
+      "angkatan": "2019",
+      "status": "Aktif",
+      "nama": "Dimas Ilham Rivaldy"
+    },
+    {
+      "id": 1648009166439,
+      "nim": "1941720123",
+      "alamat": "Jalan Kenangan",
+      "hp": "01234678999",
+      "angkatan": "2019",
+      "status": "Aktif",
+      "nama": "Mantan Satu"
+    },
+    {
+      "id": 1648010054211,
+      "nim": "1941720222",
+      "alamat": "Jalan Neraka",
+      "hp": "09999999999",
+      "angkatan": "2019",
+      "status": "Lulus",
+      "nama": "Mahmud"
+    }
+  ]
+}
