@@ -11,14 +11,24 @@ const Join = () => {
     const handleForm = e => {
         e.preventDefault();
         firebase
-          .auth()
-          .createUserWithEmailAndPassword(email, password)
-          .then((res) => {
-            if (res.user) Auth.setLoggedIn(true);
-          })
-          .catch((e) => {
-            setErrors(e.message);
-          });
+            .auth()
+            .createUserWithEmailAndPassword(email, password)
+            .then((res) => {
+                if (res.user) Auth.setLoggedIn(true);
+            })
+            .catch((e) => {
+                setErrors(e.message);
+            });
+    };
+    const googleJoin = () => {
+        const provider = new firebase.auth.GoogleAuthProvider();
+        firebase
+            .auth()
+            .signInWithPopup(provider)
+            .then((res) => {
+                console.log(res);
+                Auth.setLoggedIn(true);
+            });
     };
     return (
         <div>
@@ -39,9 +49,13 @@ const Join = () => {
                     placeholder="password"
                 />
                 <hr />
-                <button class="googleBtn" type="button">
-                    <ing
-                        src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%220%22_Logo.svg"
+                <button
+                    className="googleBtn"
+                    type="button"
+                    onClick={() => googleJoin()}
+                 >
+                     <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
                         alt="logo"
                     />
                     Join With Google
