@@ -1,0 +1,22 @@
+{
+  "mahasiswa": [
+    {
+      "id": 1,
+      "nim": "1941720206",
+      "alamat": "Jl. Simpang Candi Panggung No 58 Kota Malang - Jawa Timur",
+      "hp": "0823914897241",
+      "angkatan": "2019",
+      "status": "Aktif",
+      "nama": "Dimas Ilham Rivaldy"
+    },
+    {
+      "id": 1648052657088,
+      "nim": "131333232",
+      "alamat": "Jalan ke surga",
+      "hp": "0023131112",
+      "angkatan": "2019",
+      "status": "Lulus",
+      "nama": "Dimas"
+    }
+  ]
+}
