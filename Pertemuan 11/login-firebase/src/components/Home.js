@@ -9,8 +9,16 @@ class Home extends Component {
     render() {
         const { isLoggingOut, logoutError } = this.props; return (
             <div>
-                <h1>This is your app's protected area.</h1>
-                <p>Any routes here will also be protected</p>
+                <div class="px-2 bg-light "><marquee class="py-3" direction="right" onmouseover="this.stop()" onmouseout="this.start()"scrollamount="20">
+                  <h1>Selamat datang di perkuliahan pada mata kuliah Pemrograman Berbasis Framework dengan bahasa react js dan ini merupakan bab firebase login
+                      </h1></marquee>
+                </div>
+                <div class="px-2 bg-light "><marquee class="py-3" direction="left" onmouseover="this.stop()" onmouseout="this.start()"scrollamount="20">
+                  <h1>Halo nama saya Dimas Ilham Rivaldy,
+                      Saya mahasiswa Politeknik Negeri Malang, 
+                      Saya sedang belajar react,
+                      Mohon doa restunya yaa !!
+                      </h1></marquee></div>
                 <button onClick={this.handleLogout}>Logout</button>
                 {isLoggingOut && <p>Logging Out....</p>}
                 {logoutError && <p>Error logging out</p>}
