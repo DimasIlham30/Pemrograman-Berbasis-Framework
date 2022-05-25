@@ -4,6 +4,8 @@ import Post from "../../component/BlogPost/Post";
 // import API from "../../services";
 import firebase from "firebase";
 import firebaseConfig from "../../firebase/config";
+import Grid from "@material-ui/core/Grid";
+import Button from "@material-ui/core/Button";
 
 class BlogPost extends Component {
   constructor(props) {
@@ -111,13 +113,12 @@ class BlogPost extends Component {
             </div>
           </div>
           <input type="hidden" name="uid" ref="uid" />
-          <button
-            type="submit"
-            className="btn btn-primary"
-            onClick={this.handleTombolSimpan}
-          >
-            Simpan
-          </button>
+          <Grid container justify="center">
+           <Button color="primary" size="large" type="submit" variant="contained" className="btn btn-primary"
+            onClick={this.handleTombolSimpan}>
+           Simpan
+           </Button>
+          </Grid>
         </div>
         <h2 className="mt-2 fw-bolder">Daftar Artikel</h2>
         {this.state.listArtikel.map((artikel) => {
