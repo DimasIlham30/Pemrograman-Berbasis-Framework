@@ -12,19 +12,19 @@ class Home extends Component {
         const { isLoggingOut, logoutError } = this.props; return (
             <div>
                 <h1 align="center">Selamat datang di perkuliahan pada mata kuliah Pemrograman Berbasis Framework   </h1>
-                <div class="px-2 bg-light "><marquee class="py-3" direction="left" onmouseover="this.stop()" onmouseout="this.start()" behavior="alternate" scrollamount="20">
+                <div class="px-2 bg-light "><marquee class="py-3" direction="left" onmouseover="this.stop()" onmouseout="this.start()"  scrollamount="20">
                     <h1>Halo nama saya Dimas Ilham Rivaldy
                     </h1></marquee>
                 </div>
-                <div class="px-2 bg-light "><marquee class="py-3" direction="right" onmouseover="this.stop()" onmouseout="this.start()" behavior="alternate" scrollamount="20">
+                <div class="px-2 bg-light "><marquee class="py-3" direction="left" onmouseover="this.stop()" onmouseout="this.start()"  scrollamount="20">
                     <h1>Saya mahasiswa Politeknik Negeri Malang
                     </h1></marquee>
                 </div>
-                <div class="px-2 bg-light "><marquee class="py-3" direction="left" onmouseover="this.stop()" onmouseout="this.start()" behavior="alternate" scrollamount="20">
+                <div class="px-2 bg-light "><marquee class="py-3" direction="left" onmouseover="this.stop()" onmouseout="this.start()"  scrollamount="20">
                     <h1>Lahir di kota Malang Jawa Timur
                     </h1></marquee>
                 </div>
-                <div class="px-2 bg-light "><marquee class="py-3" direction="right" onmouseover="this.stop()" onmouseout="this.start()" behavior="alternate" scrollamount="20">
+                <div class="px-2 bg-light "><marquee class="py-3" direction="left" onmouseover="this.stop()" onmouseout="this.start()"  scrollamount="20">
                     <h1>Tinggal di kota Pasuruan
                     </h1></marquee>
                 </div>
