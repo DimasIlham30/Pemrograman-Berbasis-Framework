@@ -17,7 +17,7 @@ use App\Http\Controllers\StudentController;
 Route::post('/create-student', [StudentController::class, 'createStudent']);
 Route::get('/students', [StudentController::class, 'studentsListing']);
 Route::get('/student/{id}', [StudentController::class, 'createStudent']);
-Route::delete('/student/{id}', [StudentController::class, 'createStudent']);
+Route::delete('/student/{id}', [StudentController::class, 'studentDelete']);
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });

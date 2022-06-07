@@ -68,7 +68,7 @@ class StudentController extends Controller
         }
         else {
         return response()->json(["status" => "failed", "success" =>
-        false, "message" => "Whoops! no record found"]);
+        false, "message" => "Data Not Found"]);
         }
     }
     // --------------- [ Student Detail ] ----------------
@@ -88,18 +88,19 @@ class StudentController extends Controller
         $student = Student::find($id);
         if(!is_null($student)) {
         $delete_status = Student::where("id", $id)->delete();
-            if($delete_status == 1) {
-            return response()->json(["status" => $this->status,
-            "success" => true, "message" => "student record deleted successfully"]);
-            }
-            else{
-            return response()->json(["status" => "failed", "message" =>
-            "failed to delete, please try again"]);
-            }
+        if($delete_status == 1) {
+        return response()->json(["status" => $this->status,
+       "success" => true, "message" => "student record deleted successfully"]);
+        }
+        else{
+        return response()->json(["status" => "failed", "message" =>
+       "failed to delete, please try again"]);
+        }
         }
         else {
         return response()->json(["status" => "failed", "message" =>
-        "Whoops! no student found with this id"]);
+       "Whoops! no student found with this id"]);
         }
-    }
+        }
+       
 }
